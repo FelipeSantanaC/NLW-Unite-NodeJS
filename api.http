@@ -1,8 +1,27 @@
+POST http://localhost:3333/events/258e191a-0134-444e-acfd-41b30ef70fc3/attendees
+Content-Type: application/json
+
+{
+    "name": "Felipe Santana",
+    "email": "felipecabocloo@gmail.com",
+    "eventId": "8a89a3e4-cdd1-4ad0-8ad5-337e2889f3c7"
+}
+
+###
+
 POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
-    "details": "Um evento para quem é apaixonado por programação!",
-    "maximumAttendees": 100
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
 }
+
+###
+
+GET http://localhost:3333/events/0b0a27ee-3149-4133-82c7-2805df820c64
+
+###
+
+GET http://localhost:3333/attendees/1/badge
